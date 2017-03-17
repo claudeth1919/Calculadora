@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_inicio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anahuac.calculadora.Inicio"
+    >
+
+    <TextView
+        android:id="@+id/historico"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="40dp"
+        android:background="@color/gris"
+        android:layout_gravity="right"
+        />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="60dp"
+        android:layout_below="@+id/historico"
+        android:background="@color/gris"
+        />
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/display"
+        android:background="@color/gris"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:theme="?android:attr/actionButtonStyle">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/MisBotonesOperadores"
+                android:text="C"/>
+
+            <Button
+                android:id="@+id/btn1"
+                android:theme="@style/MisBotonesNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1" />
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="match_parent"
+                android:theme="@style/MisBotonesNum"
+                android:layout_height="match_parent"
+                android:text="4"/>
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="match_parent"
+                android:theme="@style/MisBotonesNum"
+                android:layout_height="match_parent"
+                android:text="7"/>
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:theme="@style/MisBotonesNum"
+                android:text="0"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnCE"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="CE"/>
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesNum"
+                android:text="2"/>
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesNum"
+                android:text="5"/>
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesNum"
+                android:text="8"/>
+            <Button
+                android:id="@+id/btnPunto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:text="."/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnDEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:text="DEL"/>
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesNum"
+                android:text="3"/>
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesNum"
+                android:text="6"/>
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesNum"
+                android:text="9"/>
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="="/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:text="MC"/>
+
+            <Button
+                android:id="@+id/btnEntre"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="%"/>
+
+            <Button
+                android:id="@+id/btnPor"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="x"/>
+            <Button
+                android:id="@+id/btnMenos"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+            <Button
+                android:id="@+id/btnMas"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="+"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btnMR"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="MR"/>
+            <Button
+                android:id="@+id/btnMmas"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="M+"/>
+            <Button
+                android:id="@+id/btnMmenos"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="M-"/>
+
+
+            <Button
+                android:id="@+id/btnMS"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="MS"/>
+
+            <Button
+                android:id="@+id/btnAux"
+                android:layout_width="wrap_content"
+                android:theme="@style/MisBotonesOperadores"
+                android:layout_height="wrap_content"
+                android:text="ANS"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
